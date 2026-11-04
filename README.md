@@ -4,7 +4,7 @@ A responsive, multi-page HTML/CSS/JavaScript starter for The Moonstone Chronicle
 
 ## Included pages
 
-- `index.html` — public landing page
+- `index.html` — public landing pages
 - `about-us.html` — overview of the Chronicle, its setting, and roleplay approach
 - `rules.html` — roleplay expectations and where to find current official rules
 - `support-us.html` — optional Community Support Tiers, Ko-fi link, and fan-project support policy
