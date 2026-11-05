@@ -97,17 +97,25 @@ h2 { font-size: clamp(34px, 4vw, 52px); margin-bottom: 24px; }
 .history-number { display: inline-block; color: var(--gold); font: 12px var(--display); letter-spacing: .12em; }
 .history-card h3 { margin: 28px 0 10px; color: var(--paper); font: 19px var(--display); }
 .history-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
-.three-paths { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.path-card { min-height: 340px; padding: 48px clamp(24px, 4vw, 62px); border-right: 1px solid var(--line); position: relative; overflow: hidden; }
-.path-card:last-child { border-right: 0; }
-.path-card::before { content: ""; position: absolute; width: 240px; height: 240px; border: 1px solid rgba(181,150,89,.09); border-radius: 50%; right: -100px; bottom: -130px; box-shadow: 0 0 0 22px rgba(181,150,89,.025), 0 0 0 44px rgba(181,150,89,.02); }
+.paths-section { background: linear-gradient(160deg, #171419, #100f12 72%); }
+.paths-heading { max-width: 700px; margin: 0 auto 44px; text-align: center; }
+.paths-heading .section-kicker { margin-bottom: 17px; }
+.paths-heading h2 { margin-bottom: 16px; }
+.paths-heading > p { max-width: 560px; margin: 0 auto; color: var(--muted); }
+.three-paths { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; border: 1px solid rgba(181,150,89,.2); background: rgba(181,150,89,.2); }
+.path-card { display: flex; flex-direction: column; min-height: 340px; padding: 30px clamp(20px, 2.7vw, 36px); position: relative; overflow: hidden; }
+.path-card > * { position: relative; z-index: 1; }
+.path-card::before { content: ""; position: absolute; z-index: 0; width: 240px; height: 240px; border: 1px solid rgba(181,150,89,.09); border-radius: 50%; right: -100px; bottom: -130px; box-shadow: 0 0 0 22px rgba(181,150,89,.025), 0 0 0 44px rgba(181,150,89,.02); pointer-events: none; }
 .path-human { background: linear-gradient(145deg, #1a181b, #171519); }
 .path-kindred { background: linear-gradient(145deg, #21171d, #171519); }
 .path-hunters { background: linear-gradient(145deg, #1b1821, #171519); }
-.path-number { color: var(--gold); font-size: 9px; letter-spacing: .17em; }
-.path-symbol { color: var(--gold-pale); font-size: 40px; margin: 24px 0 8px; }
-.path-card h3 { font: 400 24px var(--display); margin-bottom: 12px; }
-.path-card p { color: var(--muted); font-size: 13px; max-width: 310px; min-height: 67px; }
+.path-card-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 26px; }
+.path-number { color: var(--gold); font: 12px var(--display); letter-spacing: .12em; }
+.path-audience { color: var(--gold-pale); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; }
+.path-symbol { display: grid; place-items: center; width: 38px; height: 38px; margin-left: auto; border: 1px solid rgba(181,150,89,.24); border-radius: 50%; color: var(--gold-pale); font-size: 20px; }
+.path-card h3 { max-width: 300px; margin-bottom: 12px; color: var(--paper); font: 400 clamp(19px, 2vw, 24px)/1.35 var(--display); }
+.path-card p { max-width: 34ch; margin-bottom: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.path-card .text-link { margin-top: auto; padding-top: 22px; }
 .quote-band { text-align: center; padding: 88px 24px; background: radial-gradient(ellipse at center, #2b1b26 0%, #171419 64%, #100f12 100%); border-bottom: 1px solid rgba(181,150,89,.14); }
 .quote-ornament { color: var(--gold); font-size: 27px; margin-bottom: 20px; }
 blockquote { margin: 0; color: var(--paper); font: italic clamp(23px, 3vw, 34px)/1.5 var(--serif); }
@@ -351,10 +359,8 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
   .three-paths { grid-template-columns: 1fr; }
   .history-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .history-card { min-height: 210px; padding: 24px 20px; }
-  .path-card { min-height: auto; padding: 30px 26px; border-right: 0; border-bottom: 1px solid var(--line); }
-  .path-card:last-child { border-bottom: 0; }
-  .path-symbol { margin: 14px 0 4px; }
-  .path-card p { min-height: auto; }
+  .path-card { min-height: 0; padding: 26px 24px; }
+  .path-card .text-link { padding-top: 18px; }
   .join-art { min-height: 240px; grid-row: 2; }
   .article-layout { grid-template-columns: 1fr; gap: 35px; }
   .article-aside { position: static; flex-direction: row; flex-wrap: wrap; gap: 10px 18px; }
