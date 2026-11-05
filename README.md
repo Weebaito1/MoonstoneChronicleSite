@@ -28,19 +28,15 @@ The main navigation groups **About Us**, **Rules**, and **Support Us** under **M
 
 ## Run locally
 
-No build step is required.
+GitHub Pages uses Jekyll to apply the clean permalinks declared in each page's front matter. Opening the source HTML files directly or serving the repository with a basic static server does not process those permalinks.
 
-1. Unzip the project.
-2. Open the `moonstone-chronicle` folder.
-3. Open `index.html` in a browser.
-
-For a more realistic local preview, run a static server from the project folder, for example:
+For a local preview with clean URLs, build or serve the project with Jekyll from the project folder:
 
 ```bash
-python -m http.server 8000
+jekyll serve
 ```
 
-Then open `http://localhost:8000`.
+Then open `http://localhost:4000`.
 
 ## Future Site Edits
 
