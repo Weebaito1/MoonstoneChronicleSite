@@ -53,7 +53,7 @@
     const searchResults = document.querySelector("#search-results");
     const pagePaths = [
       "/", "/about-us/", "/character-guide/", "/clans/", "/community/",
-      "/dark-pack/", "/getting-started/", "/humans/", "/hunter-info/",
+      "/dark-pack/", "/getting-started/", "/ghouls/", "/humans/", "/hunter-info/",
       "/keybinds/", "/lore/", "/montana-falls-guide/", "/regions/",
       "/rules/", "/support-us/", "/the-chronicle/", "/world/"
     ];
