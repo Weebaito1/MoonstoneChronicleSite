@@ -164,6 +164,19 @@ blockquote { margin: 0; color: var(--paper); font: italic clamp(23px, 3vw, 34px)
 .page-hero-factions::before { background-image: url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=2000&q=80"); }
 .page-hero-start::before { background-image: url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=2000&q=80"); }
 .page-hero-community::before { background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2000&q=80"); }
+.search-page { max-width: 860px; min-height: 55vh; }
+.search-page h1 { margin: 14px 0; font-size: clamp(38px, 5vw, 58px); }
+.search-intro { color: var(--muted); }
+.search-form { display: flex; gap: 12px; margin-top: 30px; }
+.search-form input { flex: 1; min-width: 0; padding: 14px 16px; border: 1px solid var(--line); background: var(--ink-2); color: var(--paper); }
+.search-form input::placeholder { color: var(--muted); }
+.search-form .button { flex: 0 0 auto; }
+.search-status { margin: 24px 0 12px; color: var(--muted); }
+.search-results { list-style: none; padding: 0; margin: 0; }
+.search-results li { padding: 20px 0; border-top: 1px solid var(--line); }
+.search-results a { color: var(--gold-pale); font: 20px var(--display); }
+.search-results a:hover { color: var(--paper); }
+.search-results p { margin: 7px 0 0; color: var(--muted); }
 .article-layout { display: grid; grid-template-columns: 210px minmax(0, 720px); gap: 9%; align-items: start; }
 .article-aside { position: sticky; top: 30px; display: flex; flex-direction: column; gap: 13px; padding-top: 7px; }
 .article-aside .section-kicker { margin-bottom: 8px; }
@@ -392,6 +405,8 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
   .hero-lede { font-size: 17px; }
   .hero-actions { align-items: stretch; flex-direction: column; max-width: 290px; }
   .hero-actions .button { justify-content: space-between; }
+  .search-form { align-items: stretch; flex-direction: column; }
+  .search-form .button { justify-content: center; }
   .hero-footnote { max-width: 270px; line-height: 1.8; margin-top: 42px; }
   .eyebrow { font-size: 10px; letter-spacing: .12em; }
   .quote-band { padding: 65px 20px; }

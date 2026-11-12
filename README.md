@@ -21,10 +21,13 @@ A responsive, multi-page HTML/CSS/JavaScript starter for The Moonstone Chronicle
 - `montana-falls-guide.html` — introduction to the Chronicle's frontier setting
 - `dark-pack.html` — fan-content policy, attribution, and official agreement link
 - `community.html` — community values, ways to connect, and Discord/Ko-fi links
+- `search.html` — client-side search across site pages
 - `assets/css/site.css` — shared design system and responsive styles
-- `assets/js/site.js` — responsive navigation and page utilities
+- `assets/js/site.js` — responsive navigation, page utilities, and site search
 
 The main navigation groups **About Us**, **Rules**, and **Support Us** under **Moonstone**; **The World of Montana Falls** and the Montana Falls guide under **Montana Falls**; and the Chronicle overview, Kindred, Hunters, and humans under **The Creatures**. Clans are linked from the Kindred page. Onboarding, character, and keybind pages are grouped under **Getting Started**. The Chronicle overview and Kindred page each have their own page, while Arrival in Montana Falls is covered on the Montana Falls page. Dropdowns open on hover or keyboard focus on desktop, and expand with their toggle buttons on smaller screens. Server-specific rules, control bindings, and Montana Falls details should be confirmed with staff where the guides note that information is not yet published.
+
+Use the **Search** link in the main navigation to search page titles and content across the site.
 
 ## Run locally
 
